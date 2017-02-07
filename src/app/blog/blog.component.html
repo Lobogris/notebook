@@ -1,0 +1,32 @@
+<!-- Main -->
+<section id="main" class="container" style="padding-top:400px">
+    <header>
+        <h2>Blog</h2>
+        <p>A Blog page for every non-Blog situation.</p>
+    </header>
+    
+        <div *ngFor="let tutorial of tutoriales" class="bs-callout bs-callout-danger">
+            <a (click)="onSelect(tutorial)"><h4>{{tutorial.nombre}}</h4></a>
+            <p>{{tutorial.descripcion}} </p>
+            <p><code *ngFor="let tag of tutorial.tags" class="tags"><a (click)="verTag(tag)">{{tag}}</a></code></p>
+        </div>    
+        <!-- Como mostrar codigo, codigo de colores-->
+        <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
+        <div class="highlight">
+            <pre>
+                <code class="js">
+                    <span>$(</span><span class="s1">'#myModal'</span><span>).modal()</span><span class="c1">// initialized with defaults</span>
+                    <br>
+                    <span class="kd">function </span>
+                    <span class="na">aaaa</span>
+                </code>
+            </pre>
+        </div>
+    
+    <!--<ul>
+      <li *ngFor="let tutorial of tutoriales"
+        >
+        <span>{{tutorial.id}}</span> {{tutorial.nombre}} <br> {{tutorial.descripcion}}
+      </li>
+    </ul>-->
+</section>

@@ -1,0 +1,96 @@
+
+<!-- Banner -->
+    <section id="banner">
+        <h2>{{nombre}}</h2>
+        <p>Desarrollador FrontEnd</p>
+        <ul class="actions">
+            <li><a [routerLink]="['contacto']" class="button special">Contacto</a></li>
+            <li><a [routerLink]="['blog']" class="button">Leer Blog</a></li>
+        </ul>
+    </section>
+
+<!-- Main -->
+    <section id="main" class="container">
+
+        <section class="box special">
+            <header class="major">
+                <h2>Bienvenidos a {{title}} 
+                <br />
+                Mi página personal</h2>
+                <p>Me llamo Sergio y soy desarrollador de Frontend. <br>Actualmente trabajo con los framework <span style="font-weight: bold;">AngularJS</span> y <span style="font-weight: bold;">Angular2</span>. <br>Estoy muy atento a las nuevas tecnologías que van surgiendo y aprovecho para compartir lo que voy aprendiendo a la comunidad.</p>
+            </header>
+        </section>
+
+        <div class="row" id="secciones">
+            <div class="6u 12u(narrower)">
+
+                <section class="box special">
+                    <span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
+                    <h3 style="font-weight: bold;">Angular2</h3>
+                    <p>Angular2 es un framework evolucionado de javascript distinto a AngularJS. Soluciona los problemas de este último y nos servira para enfrentarnos a cualquier necesidad o problemas de la programación en el lado del cliente. </p>
+                    <ul class="actions">
+                        <li><a href="#" class="button alt">Leer más</a></li>
+                    </ul>
+                </section>
+
+            </div>
+            <div class="6u 12u(narrower)">
+
+                <section class="box special">
+                    <span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
+                    <h3 style="font-weight: bold;">AngularJS</h3>
+                    <p>AngularJS o Angular, es un framework de JavaScript de código abierto utilizado para crear y mantener aplicaciones web de una sola página. Hace uso del Modelo Vista Controlador (MVC), en un esfuerzo para hacer que el desarrollo y las pruebas sean más fáciles.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button alt">Leer más</a></li>
+                    </ul>
+                </section>
+
+            </div>
+        
+            <div class="6u 12u(narrower)">
+
+                <section class="box special">
+                    <span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
+                    <h3 style="font-weight: bold;">ReactJS</h3>
+                    <p>React (también llamada React.js o ReactJS) es una librería Javascript de código abierto para crear interfaces de usuario con el objetivo de animar el desarrollo de aplicaciones en una sola página.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button alt">Leer más</a></li>
+                    </ul>
+                </section>
+
+            </div>
+            <div class="6u 12u(narrower)">
+
+                <section class="box special">
+                    <span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
+                    <h3 style="font-weight: bold;">Polymer</h3>
+                    <p>Polymer es una librería para realizar Web Components de una manera más rápida y productiva, que además contiene un amplio catálogo de elementos disponibles para basar el desarrollo de nuevos componentes.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button alt">Leer más</a></li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+    </section>
+<!-- CTA -->
+    <section id="cta">
+
+        <h2>Subscribete</h2>
+        <p>Si quieres recibir correos sobre los tutoriales que se van creando. Nada de spam!</p>
+
+        <form>
+            <div class="row uniform 50%">
+                <div class="3u 12u(mobilep)">
+                    <input type="text" name="nombre" id="nonbre" placeholder="Nombre" />
+                </div>
+                <div class="6u 12u(mobilep)">
+                    <input type="email" name="email" id="email" placeholder="Email" />
+                </div>
+                <div class="3u 12u(mobilep)">
+                    <input type="submit" value="Aceptar" class="fit" />
+                </div>
+            </div>
+        </form>
+
+    </section>

@@ -1,0 +1,41 @@
+<header id="header" [ngClass]="setHeader()">
+    <h1><a [routerLink]="['/']" (click)="enlace='Home'">Alcazar Book</a> by Sergio Alcázar</h1>
+    <nav id="nav">
+      <ul>
+        <li><a [routerLink]="['/']" (click)="enlace='Home'">Home</a></li> <!-- <li><a href="index.html">Home</a></li>-->
+        <li>
+          <a href="#" class="icon fa-angle-down">Opciones</a>
+          <ul>
+            <li><a [routerLink]="['blog']" (click)="enlace='Blog'">Blog</a></li> <!-- href="blog.html"-->
+            <li><a [routerLink]="['contacto']" (click)="enlace='Contacto'">Contacto</a></li>
+            <li><a href="elements.html">Elementos</a></li>
+            <li>
+              <a href="#secciones">Secciones</a>
+              <ul>
+                <li><a href="#">AngularJS</a></li>
+                <li><a href="#">ReactJS</a></li>
+                <li><a href="#">Angular2</a></li>
+                <li><a href="#">Polymer</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#" class="button">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <router-outlet></router-outlet>
+  <footer id="footer">
+    <ul class="icons">
+      <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+      <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+      <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+      <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+    </ul>
+    <ul class="copyright">
+      <li>&copy; Alcazar Book. Todos los derechos reservados.</li><li>Sergio Alcázar</li>
+    </ul>
+  </footer>

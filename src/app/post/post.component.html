@@ -1,0 +1,16 @@
+<section id="main" class="container" style="padding-top:400px" *ngIf="post">
+    <h3>Hola Post</h3>
+    <section *ngFor="let apunte of post; let i = index;">
+        <p>
+            <span>
+                {{apunte.id}} {{apunte.titulo}}
+                
+            </span>
+        </p>
+        <div [innerHTML]="apunte.body"></div>
+        
+    </section>
+        <p>
+            <button (click)="gotoBlog()">Back</button>
+        </p>
+</section>
