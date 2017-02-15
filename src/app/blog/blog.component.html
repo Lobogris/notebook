@@ -4,12 +4,12 @@
         <h2>Blog</h2>
         <p>A Blog page for every non-Blog situation.</p>
     </header>
-    
+
         <div *ngFor="let tutorial of tutoriales" class="bs-callout bs-callout-danger">
-            <a (click)="onSelect(tutorial)"><h4>{{tutorial.nombre}}</h4></a>
-            <p>{{tutorial.descripcion}} </p>
+            <a (click)="onSelect(tutorial)"><h4>{{tutorial.title}}</h4></a>
+            <p>{{tutorial.description}} </p>
             <p><code *ngFor="let tag of tutorial.tags" class="tags"><a (click)="verTag(tag)">{{tag}}</a></code></p>
-        </div>    
+        </div>
         <!-- Como mostrar codigo, codigo de colores-->
         <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
         <div class="highlight">
@@ -22,7 +22,7 @@
                 </code>
             </pre>
         </div>
-    
+
     <!--<ul>
       <li *ngFor="let tutorial of tutoriales"
         >

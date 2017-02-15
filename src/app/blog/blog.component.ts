@@ -17,7 +17,7 @@ export class BlogComponent implements OnInit {
     mode = 'Observable';
 
     constructor(
-            private blogService: BlogService, 
+            private blogService: BlogService,
             private router: Router
     ) { }
 
@@ -31,11 +31,11 @@ export class BlogComponent implements OnInit {
             .subscribe(tutoriales => this.tutoriales = tutoriales,
             error =>  this.errorMessage = <any>error);*/
     }
-    ngOnInit() { 
+    ngOnInit() {
         this.getTutorial();
-        
+
     }
     onSelect(tutorial: Tutorial) {
-        this.router.navigate(['/post', tutorial.id]);
+        this.router.navigate(['/post', tutorial._id]);
     }
 }

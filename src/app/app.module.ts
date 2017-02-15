@@ -16,7 +16,8 @@ import { PostService } from './post/post.service';
 
 
 import './rxjs-operators';
-  
+
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public enlace="Home";
-  
+
   //title = 'app works!';
-  private setHeader() {    
+  private setHeader() {
     let claseHeader = this.enlace==="Home"?"alt":"";
     return claseHeader;
   }

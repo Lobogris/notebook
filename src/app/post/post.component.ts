@@ -10,7 +10,7 @@ import { PostService } from './post.service';
 })
 export class PostComponent implements OnInit {
     post: Tutorial[];
-    
+
     errorMessage: any;
 
     constructor(
@@ -19,13 +19,14 @@ export class PostComponent implements OnInit {
         private postService: PostService
     ) { }
 
-    ngOnInit() { 
+    ngOnInit() {
         this.route.params.forEach((params: Params) => {
-            let id = +params['id']; // (+) converts string 'id' to a number
-            this.postService.getPost(id)
+            //let id = +params['_id']; // (+) converts string 'id' to a number
+            let _id = params['_id']; // (+) converts string 'id' to a number
+            this.postService.getPost(_id)
             .subscribe(
                 post => this.post = post.filter((obj) => {
-                    if(obj.id===id) return true;
+                    if(obj._id===_id) return true;
                     else return false;
                 }),
                 error => this.errorMessage = <any>error);

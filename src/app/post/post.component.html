@@ -3,12 +3,12 @@
     <section *ngFor="let apunte of post; let i = index;">
         <p>
             <span>
-                {{apunte.id}} {{apunte.titulo}}
-                
+                {{apunte._id}} {{apunte.title}}
+
             </span>
         </p>
-        <div [innerHTML]="apunte.body"></div>
-        
+        <div [innerHTML]="apunte.description"></div>
+
     </section>
         <p>
             <button (click)="gotoBlog()">Back</button>

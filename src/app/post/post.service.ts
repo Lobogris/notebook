@@ -8,7 +8,8 @@ import 'rxjs/Rx';
 @Injectable()
 export class PostService {
     private postUrl = 'app/json/tutorial/post.json';  // URL to web api
-   
+    //private postUrl = 'tutorial';  // URL to web api
+
     constructor(private _http: Http) { }
 
     /*getPost(): Observable<Tutorial[]> {
@@ -20,9 +21,9 @@ export class PostService {
     getPost(identificador: number | string): Observable<Tutorial[]> {
         return this._http.get(this.postUrl)
                     .map(this.extractData)
-                    .catch(this.handleError); 
+                    .catch(this.handleError);
     }
-    
+
     private extractData(res: Response) {
         let body = res.json();
         //console.log(body.data)

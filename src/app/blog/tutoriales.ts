@@ -1,7 +1,7 @@
 import { Tutorial } from '../tutorial';
 
 export const TUTORIALES: Tutorial[] = [
-    {id:1, nombre:'Prueba 1', descripcion:'prueba222'},
-    {id:2, nombre:'Prueba 2', descripcion:'prueba222'},
-    {id:3, nombre:'Prueba 3', descripcion:'prueba222'}
+    {_id:"1", title:'Prueba 1', description:'prueba222'},
+    {_id:"2", title:'Prueba 2', description:'prueba222'},
+    {_id:"3", title:'Prueba 3', description:'prueba222'}
 ];

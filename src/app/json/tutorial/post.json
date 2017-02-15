@@ -2,13 +2,13 @@
     "data":[
         {
             "id":1,
-            "titulo":"Titulo1",
-            "body":"<br>Probando <br> so<br>adas"
+            "title":"Titulo1",
+            "description":"<br>Probando <br> so<br>adas"
         },
         {
             "id":2,
-            "titulo":"Titulo2",
-            "body":"Tambin <br>Probando <br> so<br>adas"
+            "title":"Titulo2",
+            "description":"Tambin <br>Probando <br> so<br>adas"
         }
     ]
 }

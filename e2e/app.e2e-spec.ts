@@ -1,10 +1,10 @@
-import { BlogPersonalPage } from './app.po';
+import { BlogTutorialPage } from './app.po';
 
-describe('blog-personal App', function() {
-  let page: BlogPersonalPage;
+describe('blog-tutorial App', function() {
+  let page: BlogTutorialPage;
 
   beforeEach(() => {
-    page = new BlogPersonalPage();
+    page = new BlogTutorialPage();
   });
 
   it('should display message saying app works', () => {

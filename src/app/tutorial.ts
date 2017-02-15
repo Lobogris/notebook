@@ -1,8 +1,8 @@
 
 export class Tutorial {
-    id: number;
-    nombre: string;
-    descripcion: string;
+    _id: string;
+    title: string;
+    description: string;
     imagen?: any;
     body?: any;
 }
