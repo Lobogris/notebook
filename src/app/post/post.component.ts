@@ -22,7 +22,7 @@ export class PostComponent implements OnInit {
     ngOnInit() {
         this.route.params.forEach((params: Params) => {
             //let id = +params['_id']; // (+) converts string 'id' to a number
-            let _id = params['_id']; // (+) converts string 'id' to a number
+            let _id = params['_id'];
             this.postService.getPost(_id)
             .subscribe(
                 post => this.post = post.filter((obj) => {

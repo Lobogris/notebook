@@ -2,14 +2,16 @@ import { Injectable } from '@angular/core';
 import { Tutorial } from '../tutorial';
 //import { TUTORIALES } from './tutoriales';
 import { Headers, Http, Response } from '@angular/http';
+import { environment} from '../../environments/environment';
 
 import { Observable }     from 'rxjs/Observable';
 import 'rxjs/Rx';
 
 @Injectable()
 export class BlogService {
-    private tutorialUrl = 'app/json/tutorial/tutorial.json';  // URL to web api
-   
+    //private tutorialUrl = 'app/json/tutorial/tutorial.json';  // URL to web api
+    private tutorialUrl = environment.localhost;  // URL to web api
+
     constructor(private _http: Http) { }
 
     getTutoriales(): Observable<Tutorial[]> {
@@ -27,10 +29,10 @@ export class BlogService {
             .then(() => this.getTutorial());
     }
     */
-    
+
     private extractData(res: Response) {
         let body = res.json();
-        return body.data || { };
+        return body || { };
     }
 
     private handleError (error: Response | any) {
@@ -44,11 +46,11 @@ export class BlogService {
         }
         console.error(errMsg);
         return Observable.throw(errMsg);
-        
+
         /*let errMsg = (error.message) ? error.message :
         error.status ? `${error.status} - ${error.statusText}` : 'Server error';
         console.error(errMsg); // log to console instead
         return Observable.throw(errMsg);*/
     }
-    
+
 }

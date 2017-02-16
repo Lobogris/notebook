@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Tutorial } from '../tutorial';
 import { Headers, Http, Response, URLSearchParams } from '@angular/http';
+import { environment} from '../../environments/environment';
 
 import { Observable }     from 'rxjs/Observable';
 import 'rxjs/Rx';
@@ -9,7 +10,7 @@ import 'rxjs/Rx';
 export class PostService {
     private postUrl = 'app/json/tutorial/post.json';  // URL to web api
     //private postUrl = 'tutorial';  // URL to web api
-
+    //private postUrl = environment.localhost;
     constructor(private _http: Http) { }
 
     /*getPost(): Observable<Tutorial[]> {
@@ -26,7 +27,7 @@ export class PostService {
 
     private extractData(res: Response) {
         let body = res.json();
-        //console.log(body.data)
+        console.log('postService', res);
         return body.data || { };
     }
 
